@@ -82,6 +82,8 @@ function App() {
       navigate("/");
     } catch (error) {
       setDeleteError(error.message);
+    } finally {
+      setDeleteLoading(false);
     }
   };
 
